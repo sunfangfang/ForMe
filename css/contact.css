@@ -1,0 +1,40 @@
+/******************* xiaofeng **************/
+.contact{ width:100%; padding:0px 0px 200px 0;  background:url("../images/hand.jpg")/*tpa=http://www.chinabang.net/images/hand.jpg*/ no-repeat center top #23ac38;}
+.talk{ width:900px; height:134px; margin:100px auto; z-index:2; position:relative;}
+.tel{ width:737px; height:797px; margin:0px auto; padding-top:40px; z-index:2; position:relative;}
+.add{ width:700px; margin:0px auto; text-align:center; color:#fff; font-size:20px; line-height:50px; padding-top:200px;}
+.add span{ font-size:72px; line-height:120px;}
+
+.hanbang{ width:624px; height:55px; margin:0px auto; padding-top:150px;}
+.teldh { width:980px; height:432px; position:absolute; left:50%; top:130px; margin-left:-400px; display:none; z-index:1;
+
+background:url("../images/teldh.png")/*tpa=http://www.chinabang.net/images/teldh.png*/ no-repeat;
+text-align:right;
+}
+.teldh img {
+width:126px;
+height:141px;
+position: absolute; right:0px; top:0px;
+animation:myfirst 0.2s;
+-moz-animation:myfirst 0.2s; /* Firefox */
+-webkit-animation:myfirst 0.2s; /* Safari and Chrome */ 
+-o-animation:myfirst 0.2s; /* Opera */
+animation-iteration-count:5;
+}
+
+@keyframes myfirst{
+0%   {right:2px;}
+10%  {right:0px;}
+20%  {right:-2px;}
+30%  {right:0px;}
+40%  {right:2px;}
+50%  {right:0px;}
+60%  {right:-2px;}
+70%  {right:0px;}
+80%  {right:2px;}
+90%  {right:0px;}
+100% {right:-2px;}
+
+
+}
+
