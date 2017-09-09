@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<title>个人站</title>
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<link rel="icon" href="./images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/gongyong.css">
+<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+<link href="css/css.css" rel="stylesheet" type="text/css" media="screen and (min-width: 1600px) ">
+<link href="css/css1600.css" rel="stylesheet" type="text/css" media="screen and (min-width: 1380px) and (max-width: 1600px)">
+<link href="css/css1024.css" rel="stylesheet" type="text/css" media="screen and (max-width: 1380px)">
+<!--<link href="css/cssmobile.css" rel="stylesheet" type="text/css" media="screen and (max-width: 1000px)">-->
+<link rel="stylesheet" href="css/font.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/js.js"></script>
+<style>
+	.hblogo,.logo {
+	    color: #08903d;
+	    font-size: 35px;
+	    font-weight: 700;
+	}
+	#ib-container article .text2{
+		text-align: center;
+	}
+	.container {
+	    width: 80%;
+	    margin: 0 auto;
+	    position:relative;
+	    height: 100%;
+	}
+	.contain2 {
+	    color: #eaeaea;
+	    position: absolute;
+	    top: 30%;
+	}
+	.contain2 h1{
+	    font-size: 45px;
+    	letter-spacing: -2px;
+	}
+	.contain2 h2{
+		font-size: 30px;
+	}
+	.title {
+	    font-size: 32px;
+	    color: #eaeaea;
+	    font-weight: normal;
+	    text-align: center;
+	    transition: all .6s ease;
+	}
+	.contain1 {
+	    height: auto;
+	    text-align: right;
+	    position: absolute;
+	    top: 30%;
+	    right: 0;
+	    text-align: left;
+	}
+	.person_wrap {
+    	position: absolute;
+	    top: 30%;
+	    left: 50%;
+	    width:100%;
+	    height: auto;
+	    text-align: center;
+	    width: 500px;
+	    transform: translate(-50%,0%);
+	   
+	}
+	.person_wrap h1{
+		color: #fff;
+		font-size: 50px;
+	}
+	.person_wrap h2{
+		color: #fff;
+		font-size: 30px;
+	}
+	.person_wrap h6{
+		color: #ccc;
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.navtop ul .active a{
+		color: #23ac38;
+	}
+	.navtop1 ul .active a{
+		color: #19cd35;
+	}
+</style>
+<script>
+$(function(){
+        window.onload = function() {
+            if (window.applicationCache) {
+            } else {
+                alert("你的浏览器版本过低不支持HTML5");
+            }
+        }
+});
+</script>
+<script>
+$(function(){
+	$.fn.fullpage({
+		verticalCentered: false,
+		anchors: ['page1', 'page2', 'page3', 'page4', 'page6'],
+		navigation:true,
+		navigationTooltips: ['HOME','ABOUT', 'SKILL', 'WORK', 'CONTACT'],
+		slidesNavigation:true,
+		slidesNavPosition:"bottom",
+		controlArrowColor:"#333",
+		menu: '#menu',
+        afterLoad: function(anchorLink, index){
+            if(index == 1){
+                $(".nav").hide();
+                $(".tongl2").hide();
+            }
+            if(index == 2){
+            $(".tongl2").show();
+            }
+            if(index == 3){
+            $(".tongl2").show();
+            }
+            if(index == 4){
+            $(".tongl2").show();
+            }
+            if(index == 5){
+            $(".tongl2").show();
+            }
+           
+        }
+	});
+});
+</script>
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link href="css/owl.theme.css" rel="stylesheet">
+<script src="js/owl.carousel.js"></script>
+<script>
+$(function(){
+    $('#owl-demo').owlCarousel({
+        items: 1
+    });
+    $('#owl-demo11').owlCarousel({
+        items: 1,
+        navigation: true,
+        navigationText: ["<div class='alleft'></div>","<div class='alright'></div>"]
+    });
+    $('#owl-demo11').find('.owl-controls').find('.owl-pagination').hide();
+});
+</script>
+</head>
+<body style="min-width: 1024px;overflow-x: auto;"> 
+<div class="section section1">
+	<div class="bg"><img src="images/home_bg.jpg"/></div>
+	<div class="hei">
+		<div class="person_wrap">
+			<h1>SunFangFang</h1>
+			<h2>Front end Engineer</h2>
+			<h6>You cannot improve your past, but you can improve your future.
+Once time is wasted, life is wasted.</h6>
+		</div>
+	</div>
+	<div class="logo">FORME</div>
+	<div class="navtop">
+    	<ul id="menu">
+            <li data-menuanchor="page1" class="active"><a href="#page1">HOME</a></li>
+            <li data-menuanchor="page2" ><a href="#page2">ABOUT</a></li>
+            <li data-menuanchor="page3" ><a href="#page3">WORK</a></li>
+            <li data-menuanchor="page4" ><a href="#page4">SKILL</a></li>
+            <li data-menuanchor="page6" ><a href="#page6">CONTACT</a></li>
+        </ul>
+   </div>
+	<div class="scroll-button-wrapper">
+        <a href="#page2"><span class="scroll-circle"></span></a>
+	</div>
+</div>
+<div class="section section2">
+    <div class="bg"><img src="images/00.jpg"></div>
+	<div class="zhuti1">
+		<div class="ztbg"></div>
+		<div class="tb1"><img src="images/p2_1b.png"></div>
+		<div class="tb"><img src="images/p2_1.png"></div>
+		<div class="ztitle">基本信息</div>
+		<div class="zms">
+            <p>姓名：孙芳芳</p>
+            <p>年龄：24</p>
+            <p>性别：女</p>
+            <p>出生日期：1992.07.04</p>
+        </div>
+	</div>
+	<div class="zhuti2">
+		<div class="ztbg" style="background:#67adde;  width:100%; height:100%;opacity:0.8;position:absolute; top:0;left:0;"></div>
+		<div class="tb" style=" display:none;"><img src="images/p2_2.png" ></div>
+		<div class="tb1" style=" display: block;"><img src="images/p2_2b.png"></div>
+		<div class="ztitle" style="color:#FFFFFF;">教育背景</div>
+		<div class="zms">
+			<p>学历：本科</p>
+            <p>专业：计算机科学与技术</p>
+            <p>毕业学校：吕梁学院</p>
+		</div>
+	</div>
+	<div class="zhuti3">
+		<div class="ztbg"></div>
+		<div class="tb1"><img src="images/p2_3b.png"></div>
+		<div class="tb"><img src="images/p2_3.png"></div>
+		<div class="ztitle">工作经历</div>
+		<div class="zms">
+			<p>北京熊宝贝科技发展有限公司</p>
+			<p>鑫大师科技有限公司</p>
+		</div>
+	</div>
+	<div class="zhuti4">
+		<div class="ztbg" style="background:#4dad33;  width:100%; height:100%;opacity:0.8;position:absolute; top:0px; left:0px;"></div>
+		<div class="tb" style=" display:none;"><img src="images/p2_4.png"></div>
+		<div class="tb1" style=" display: block;"><img src="images/p2_4b.png"></div>
+		<div class="ztitle" style="color:#FFFFFF;">自我评价</div>
+		<div class="zms">
+			<p style="padding: 0 10px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自学能力很强，专业知识扎实，有积极的工作态度，能够独立工作，又极赋团队精神，能在短期间内适应新环境，个性开朗，积极乐观，责任心强，脚踏实地，认真细致，能看到自己的优点，认识自己的不足，发挥自己的长处，改进自己的不足</p>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+    $('.section3').mousemove(function(e) {
+        var xx=e.pageX;
+        var yy=e.pageY;
+        var w=xx/10;
+        var h=yy/10;
+        $(this).find('.bgbg').css("left",-w+"px");
+        $(this).find('.bgbg').css("top",-h+"px");
+    });
+</script>
+<div class="section section3">
+	<div class="bgbg" style="position:absolute;"><img src="images/bg4.jpg" width="110%" height="110%"></div>
+    <div class="fadeInUp">
+        <div id="owl-demo11" class="owl-carousel">
+            <div class="item">
+                <ul class="og-grid">
+                    <li>
+                        <a href="http://www.66wedding.com/" target="_blank">
+                            <div class="gridpic">
+                                <figure class="effect-bubba">
+                                    <img src="images/66web.png">
+                                    <figcaption>
+                                        <h2>66结婚网</h2>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://sunfangfang.github.io/WebBear" target="_blank">
+                            <div class="gridpic">
+                                <figure class="effect-bubba">
+                                    <img src="images/erp_login.png">
+                                    <figcaption>
+                                        <h2>四代ERP</h2>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://sunfangfang.github.io/WebXP" target="_blank">
+                            <div class="gridpic">
+                                <figure class="effect-bubba">
+                                    <img src="images/yldxp.png">
+                                    <figcaption>
+                                        <h2>影楼端选片</h2>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://sunfangfang.github.io/XPD" target="_blank">
+                            <div class="gridpic">
+                                <figure class="effect-bubba">
+                                    <img src="images/xp.png">
+                                    <figcaption>
+                                        <h2>客户端选片</h2>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.chinaportrait.org" target="_blank">
+                            <div class="gridpic">
+                                <figure class="effect-bubba">
+                                    <img src="images/rx.png">
+                                    <figcaption>
+                                        <h2>中国人像摄影学会</h2>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://dzjd.66wedding.com" target="_blank">
+                            <div class="gridpic">
+                                <figure class="effect-bubba">
+                                    <img src="images/ipad_img.png">
+                                    <figcaption>
+                                        <h2>电子接单系统</h2>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://sunfangfang.github.io/LWSJ" target="_blank">
+                            <div class="gridpic">
+                                <figure class="effect-bubba">
+                                    <img src="images/lw_img.png">
+                                    <figcaption>
+                                        <h2>立伟世纪官网</h2>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://sunfangfang.github.io/GLZS" target="_blank">
+                            <div class="gridpic">
+                                <figure class="effect-bubba">
+                                    <img src="images/glzs.png">
+                                    <figcaption>
+                                        <h2>管理助手</h2>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="item">
+                <ul class="og-grid">
+                    <li>
+                        <a href="https://sunfangfang.github.io/AppManager/" target="_blank">
+                            <div class="gridpic">
+                                <figure class="effect-bubba">
+                                    <img src="images/app_igm.png">
+                                    <figcaption>
+                                        <h2>APP后台管理系统</h2>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://sunfangfang.github.io/RenXWEB" target="_blank">
+                            <div class="gridpic">
+                                <figure class="effect-bubba">
+                                    <img src="images/rxht.png">
+                                    <figcaption>
+                                        <h2>中国人像摄影学会后台管理系统</h2>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://sunfangfang.github.io/calculator/" target="_blank">
+                            <div class="gridpic">
+                                <figure class="effect-bubba">
+                                    <img src="images/jsq.png">
+                                    <figcaption>
+                                        <h2>计算器</h2>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://sunfangfang.github.io/gobang" target="_blank">
+                            <div class="gridpic">
+                                <figure class="effect-bubba">
+                                    <img src="images/gobang.png">
+                                    <figcaption>
+                                        <h2>五子棋</h2>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://sunfangfang.github.io/poker" target="_blank">
+                            <div class="gridpic">
+                                <figure class="effect-bubba">
+                                    <img src="images/zhipai.png">
+                                    <figcaption>
+                                        <h2>纸牌游戏</h2>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://sunfangfang.github.io/sff-snake" target="_blank">
+                            <div class="gridpic">
+                                <figure class="effect-bubba">
+                                    <img src="images/snake.png">
+                                    <figcaption>
+                                        <h2>贪吃蛇</h2>
+                                        <p>利用智能设备，提供旅游目的地信息的新型互联网公司</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://sunfangfang.github.io/todo" target="_blank">
+                            <div class="gridpic">
+                                <figure class="effect-bubba">
+                                    <img src="images/beiwang.png">
+                                    <figcaption>
+                                        <h2>备忘录</h2>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+
+                        <a href="http://sunfangfang.github.io/canvas/" target="_blank">
+                            <div class="gridpic">
+                                <figure class="effect-bubba">
+                                    <img src="images/huabu.png">
+                                    <figcaption>
+                                        <h2>画图工具</h2>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section section5">
+    <div class="bg">
+        <div class="canvas">
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+    <div id="ib-container">
+        <article class="grid_3">
+            <div class="box maxheight">
+                <div class="text1">精通</div>
+                <div class="text2">HTML5</div>
+                <div class="text2">CSS3</div>
+                <div class="text2">Javascript</div>
+                <div class="text2">jQuery</div>
+                <div class="text2">zepto.js</div>
+                <div class="text2">AJAX</div>
+                <div class="text2">bootstrap</div>
+            </div>
+        </article>
+        <article class="grid_3">
+            <div class="box maxheight">
+            	<div class="text1">熟悉</div>
+                <div class="text2">PS</div>
+                <div class="text2">AI</div>
+                <div class="text2">phpstorm</div>
+                <div class="text2">sublime text</div>
+                <div class="text2">HBuilder</div>
+                <div class="text2">git</div>
+                <div class="text2">svn</div>
+            </div>
+        </article>
+        <article class="grid_3">
+            <div class="box maxheight">
+                <div class="text1">良好</div>
+                <div class="text2">vue</div>
+                <div class="text2">bower</div>
+                <div class="text2">webpack</div>
+                <div class="text2">mui</div>
+                <div class="text2">jqueryUI</div>
+                <div class="text2">echarts</div>
+                
+            </div>
+        </article>
+        <article class="grid_3">
+            <div class="box maxheight">
+                <div class="text1"><a href="javascript:void(0);">一般</a></div>
+                <div class="text2">nodeJs</div>
+                <div class="text2">react</div>
+                <div class="text2">less</div>
+                <div class="text2">elementUI</div>
+            </div>
+        </article>
+        <article class="grid_3">
+            <div class="box maxheight">
+                <div class="text1"><a href="javascript:void(0);">继续学习</a></div>
+                <div class="text2">php</div>
+                <div class="text2">angualarjs</div>
+                <div class="text2">sass</div>
+                <div class="text2">Ecmascript 6</div>
+                <div class="text2">React Native</div>
+            </div>
+        </article>
+    </div>
+    <div class="tongl2">
+        <!--导航-->
+        <div class="navtop1">
+            <ul id="menu">
+	            <li data-menuanchor="page1" ><a href="#page1">HOME</a></li>
+	            <li data-menuanchor="page2" ><a href="#page2">ABOUT</a></li>
+	            <li data-menuanchor="page3" ><a href="#page3">WORK</a></li>
+	            <li data-menuanchor="page4" ><a href="#page4">SKILL</a></li>
+	            <li data-menuanchor="page6" ><a href="#page6">CONTACT</a></li>
+	        </ul>
+        </div>
+        <!--导航-->
+        <div class="hblogo">FORME</div>
+    </div>
+</div>
+<script src="js/xingkong.js"></script>
+<div class="section section6">
+    <div class="ceng6">
+        <div class="container">
+            <div class="contain2">
+                <h1>Thank you for your view.</h1>
+                <h2 class="animated shake infinite">Contact Me</h2>
+            </div>
+            <div class="contain1">
+                <div class="iconfont icon-address1">北京市</div>
+                <div class="iconfont icon-phone">13683093357</div>
+                <div class="iconfont icon-qq">1065291792</div>
+                <div class="iconfont icon-address1">1065291792@qq.com</div>
+                <div class="iconfont icon-weixin">Fang1065291792</div>
+                <div class="iconfont icon-github"><a href="https://github.com/sunfangfang" target="_blank">https://github.com/sunfangfang</a></div>
+                <div class="iconfont icon-blog"><a href="http://www.cnblogs.com/sunfangfang" target="_blank">http://www.cnblogs.com/sunfangfang</a></div>
+            </div>
+        </div>
+        <div class="footer">Copyright ©2017 sunfangfang</div>
+    </div>
+</div>
+<div class="sidebar">
+    <ul>
+        <li><a href="#page1"><img src="images/up.png"></a></li>
+    </ul>
+</div>
+
+
+<script type="text/javascript">
+	$(function(){
+		$("#menu li").click(function(){
+			$(this).addClass("active").siblings().removeClass("active");
+		})
+	})
+</script>
+</body>
+</html>

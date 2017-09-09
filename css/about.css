@@ -1,0 +1,399 @@
+/******************* xiaofeng **************/
+
+body { background:url("../images/aboutbg.jpg")/*tpa=http://www.chinabang.net/images/aboutbg.jpg*/ no-repeat bottom left;}
+
+*{ margin:0px; padding:0px; }
+
+.topbg { position:relative; z-index:1; width:100%;  font-size:0px; }
+
+.topbg img{width:100%; }
+
+.topbg2 { position:relative; z-index:1; width:100%;  font-size:0px; }
+
+.topbg2 img{width:100%; }
+
+.topbg.animated { } 
+
+.lvse { width:258px; height:500px;  z-index:0; background:url("../images/lvse.jpg")/*tpa=http://www.chinabang.net/images/lvse.jpg*/ no-repeat right bottom #23ac38; position: absolute; top:-1400px;  margin-left:200px; transition: all 1s; }
+
+.lvse.animated {top:-600px; transition-delay: 1s;} 
+
+.lvse1 { width:258px; height:600px;  z-index:0; background:url("../images/lvse.jpg")/*tpa=http://www.chinabang.net/images/lvse.jpg*/ no-repeat right bottom #23ac38;  position:relative; top:-1500px; margin-left:20px; transition: all 1s;}
+
+.lvse1.animated { top:-600px; transition-delay: 1s;} 
+
+
+
+.logo {  left:4%;/* margin-left:-400px;*/ height:58px; top:11px; z-index:9; position: absolute;}
+
+/*.navbg { background-color:#000000; opacity:0.5; width:100%; height:100px; position:fixed; top:0px; left:0px; z-index:7;}*/
+
+.scroll-button-wrapper{ position:absolute; bottom:30px; left:50%; margin-left:-65px; z-index:8;width:130px;height:130px;}
+
+.scroll-button-wrapper .scroll-circle{
+
+background-image:url("../images/sprite.png")/*tpa=http://www.chinabang.net/images/sprite.png*/;
+
+background-repeat:no-repeat;
+
+width:130px;
+
+height:130px;
+
+display:block;
+
+position:relative;
+
+top:0px;
+
+animation:arrow-pulsate 1.5s infinite;
+
+-webkit-animation:arrow-pulsate 1.5s infinite;
+
+-moz-animation:arrow-pulsate 1.5s infinite;
+
+}
+
+@-webkit-keyframes arrow-pulsate {
+
+	0% {
+
+	top: 0
+
+}
+
+50% {
+
+	top: -40px
+
+}
+
+100% {
+
+	top: 0
+
+}
+
+}
+
+@-moz-keyframes arrow-pulsate {
+
+	0% {
+
+	top: 0
+
+}
+
+50% {
+
+	top: -40px
+
+}
+
+100% {
+
+	top: 0
+
+}
+
+}
+
+@keyframes arrow-pulsate {
+
+	0% {
+
+	top: 0
+
+}
+
+50% {
+
+	top: -40px
+
+}
+
+100% {
+
+	top: 0
+
+}
+
+}
+
+
+
+
+
+.content { background:url("../images/jieshao.jpg")/*tpa=http://www.chinabang.net/images/jieshao.jpg*/ no-repeat right; height:610px; margin-top:50px;}
+
+.about { width:600px;height:610px;background-color:#FFFFFF;position:relative; margin-left:200px; color:#333333;}
+
+.about em{display:block;position:absolute;	top:0px;right:-200px;border-left:200px #fff solid; border-top:610px transparent dotted;width:0;height:0;overflow:hidden;cursor:pointer;}
+
+.about:before {content:''; display:block;position:absolute;	top:0px;left:-200px;border-top:610px #fff solid; border-left:200px transparent dotted;width:0;height:0;overflow:hidden;cursor:pointer;}
+
+.size48 { font-size:48px;}
+
+
+
+.size30{ font-size:30px;}
+
+
+
+
+
+
+
+.yuan { width:1080px; margin:0 auto; position:relative; height:400px;}
+
+.yuanzi { height:30px; line-height:30px; width:240px; text-align:center; font-size:30px; display:block; float:left; margin-top:30px;}
+
+.yuanzi1 { height:30px; line-height:30px; width:240px; text-align:center; font-size:30px; display:block; float:left;margin-top:30px; margin-left:40px;}
+
+.heng { font-size:30px; color:#666666; }
+
+
+
+
+
+.chart {
+
+    display: block;
+
+    position: relative;
+
+}
+
+
+
+.percent {
+
+    display: inline-block;
+
+    font-size: 1.6em;
+
+    height: 240px;
+
+    line-height: 240px;
+
+    text-align: center;
+
+    width: 240px;
+
+    z-index: 2;
+
+}
+
+
+
+.chart canvas,.chart canvas,.chart1 canvas,.chart2 canvas,.chart3  canvas  {
+
+    left: 50%;
+
+    margin-left:0px;
+
+    position: absolute;
+
+    top: 0;
+
+}
+
+
+
+.percent:after {
+
+    content: '';
+
+    margin-left: .1em;
+
+    font-size: .8em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.chart,.chart1,.chart2,.chart3   {
+
+  position: relative;
+
+  display: inline-block;
+
+  width: 240px;
+
+  height: 240px;
+
+  margin-top:0px;
+
+  margin-bottom: 0px;
+
+
+
+}
+
+
+
+.chart canvas,.chart1 canvas,.chart2 canvas,.chart3 canvas {
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+}
+
+.percent {
+
+  display: inline-block;
+
+  line-height:240px;
+
+  height:240px;
+
+  z-index: 2;
+
+}
+
+.percent:after {
+
+  content: '';
+
+  margin-left: 0.1em;
+
+  font-size: .8em;
+
+}
+
+.angular {
+
+  margin-top: 0px;
+
+}
+
+.angular .chart {
+
+  margin-top: 0;
+
+}
+
+
+
+
+
+
+
+
+
+.fwpp { padding-top:80px;}
+
+.fwpp .title { font-size:38px; color:#FFFFFF; height:80px; padding-left:40px;}
+
+.fwpp .ms { font-size:18px; color:#FFFFFF; height:100px; padding-left:40px;}
+
+.fwpplogo {position:relative; height:800px;}
+
+.fwpplogo1 { width:350px; height:350px; background-color:#FFFFFF; position:absolute; left:0px; top:0px;}
+
+.fwpplogo2 { width:173px; height:350px; background-color:#FFFFFF; position:absolute; left:354px; top:0px;}
+
+.fwpplogo3 { width:350px; height:173px; background-color:#FFFFFF; position:absolute; left:531px; top:0px; }
+
+.fwpplogo4 { width:173px; height:173px; background-color:#FFFFFF; position:absolute; left:708px; top:0px;display:none;}
+
+.fwpplogo5 { width:173px; height:173px; background-color:#FFFFFF; position:absolute; left:354px; top:177px;display:none;}
+
+.fwpplogo6 { width:350px; height:350px; background-color:#FFFFFF; position:absolute; left:531px; top:177px;}
+
+.fwpplogo7 { width:173px; height:173px; background-color:#FFFFFF; position:absolute; left:885px; top:177px;}
+
+.fwpplogo8 { width:350px; height:350px; background-color:#FFFFFF; position:absolute; left:0px; top:354px;}
+
+.fwpplogo9 { width:173px; height:173px; background-color:#FFFFFF; position:absolute; left:177px; top:354px;display:none;}
+
+.fwpplogo10 { width:173px; height:350px; background-color:#FFFFFF; position:absolute; left:354px; top:354px;}
+
+.fwpplogo11 { width:173px; height:173px; background-color:#FFFFFF; position:absolute; left:354px; top:531px;display:none;}
+
+
+
+
+
+.fwpplogo7  div{ font-size:30px; color:#2dab40; padding:45px 35px 0 60px; line-height:40px;}
+.fwpplogo3 div{ font-size:30px; line-height:50px; padding:10px 40px 0px 40px;}
+.fwpplogo1 div,.fwpplogo6 div,.fwpplogo8 div { font-size:30px; line-height:50px; padding:100px 40px 0px 40px;}
+.fwpplogo2 div,.fwpplogo10  div {font-size:30px; line-height:50px; padding:60px 20px 0px 20px;}
+.fwpplogo1 p,.fwpplogo3 p,.fwpplogo6 p,.fwpplogo8 p{ font-size:18px; line-height:26px; padding:0 40px;}
+.fwpplogo2 p,.fwpplogo10  p  {font-size:18px; line-height:26px; padding:0 20px;}
+
+
+
+
+
+
+
+.licheng { width:1001px; height:400px; margin:0 auto;}
+
+.shuxian { width:1px; height:350px; background-color:#666666; float:left;}
+
+.item div.neirong{ width:393px; height:350px; float:left; padding-right:30px; font-size:20px; float:left;}
+
+
+
+.nianfen { width:77px; float:left; text-align:left; padding-top:60px;}
+
+.nianfen1 { width:77px; float:left; text-align:right; padding-top:60px;}
+
+.item div.neirong1{ width:393px; height:300px; float:left;  font-size:20px;  padding-left:30px;}
+
+.owl-buttons { margin-top:-100px; z-index:9999; position:relative;}
+
+.owl-theme .owl-controls .owl-buttons div.owl-prev,.owl-theme .owl-controls .owl-buttons div.owl-next{ background:none; padding:0 30px;}
+
+.owl-pagination { display:none;}
+
+
+
+
+
+.abouttitle { font-size:30px; text-align:center; margin-top:80px;}
+
+.aboutftitle { font-size:18px; text-align:center; margin-bottom:40px; line-height:40px;}
+
+
+
+
+
+.aboutby { width:222px; height:118px; position:absolute;  left:50%; margin-left:-111px; top:120px; z-index:8;}
+
+
+
+.about2001 {width:567px; height:218px; position:absolute;  left:50%; margin-left:-297px; top:250px; z-index:8;}
+
+
+
+
+
+@media screen and (max-height: 650px) { 
+
+
+
+.aboutby { width:222px; height:118px; position:absolute;  left:50%; margin-left:-111px; top:100px; z-index:8;}
+
+
+
+.about2001 {width:567px; height:218px; position:absolute;  left:50%; margin-left:-297px; top:200px; z-index:8;}
+
+
+
+
+
+}
+

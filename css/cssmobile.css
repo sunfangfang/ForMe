@@ -1,0 +1,99 @@
+/******************* xiaofeng **************/
+body {-webkit-text-size-adjust: none;}
+.mobile { display:block;}
+#baidu { display:none;}
+li{ list-style-type:none; }
+.clear { clear:both;}
+.sidebar { display:none;}
+.logo {  left:4%;/* margin-left:-400px;*/ width:107px; height:60px; top:20px; z-index:9; position: absolute;}
+.logo img{ height:36px;}
+.hgroup {  position: absolute; width:  76%; height: 194px; left: 12%; top: 120px;  opacity:1; -webkit-transform:scale(1, 1); transform:scale(1, 1); transition-delay: 0.5s;  }
+.hgroup img { width:100%;}
+.navtop { display:none;}
+.indexFlash li{position: absolute; width:100%; height: 194px; display:none; list-style-type:none; }
+.hei { background:#000000; opacity: 0.3; position:absolute; top:0px; left:0px; width:100%; height:100%;}
+
+
+.section1 { height:430px; width:100%; position:relative; overflow: hidden; }
+.section1 .bg { width:100%; height:430px; background:url("../images/mobilebg.jpg")/*tpa=http://www.chinabang.net/images/mobilebg.jpg*/ no-repeat center center;}
+
+.section { display:none;}
+.section2,.section3,.section4,.section5,.section6 { display:none;}
+
+
+
+
+
+#fullPage-nav { display:none;}
+
+
+
+
+
+.m_case { width:100%; padding-top:10px;}
+.m_case ul li{ width:47%; margin-left:2%; margin-bottom:2%;  float:left;  font-size:0px; position:relative;}
+.m_case ul li img{ width:100%;  }
+.m_case ul li .more{ display:block; }
+.m_casetit { width:200px; height:45px;  top:180px; background:url("../images/cases.png")/*tpa=http://www.chinabang.net/images/cases.png*/ no-repeat; background-size:200px auto; margin-left:2%;}
+.m_case ul li p {
+	position:absolute;
+	bottom:10px;
+	left:0px;
+	font-size:12px;
+	padding-left:10px;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,0px,0);
+	transform: translate3d(0,0px,0);
+	color:#fff;
+	font-weight:inherit;
+	font-family:inherit;
+	text-shadow:black 0 3px 3px;
+	
+}
+
+
+
+
+.m_jieshao { background-color:#ededed; padding:2%;}
+.jieshaobg { background-color:#fff; padding:5%; font-size:14px; border:3px solid #efefef;}
+.jieshaobg span { color:#08913c;}
+
+
+
+.m_foot{ background-color:#333; padding:5%; text-align:center; color:#FFFFFF; font-size:14px;}
+.m_foot .tel{ height:40px;}
+.m_foot .tel1  { height:40px; padding-bottom:20px;}
+.m_foot .tel a{ font-size:32px; background:url("../images/fnavtb1.png")/*tpa=http://www.chinabang.net/images/fnavtb1.png*/ no-repeat left  center;  background-size:auto 30px; padding-left:40px; padding-top:5px; padding-bottom:5px; }
+.m_foot .tel1 a{ font-size:32px; background:url("../images/fnavtb1.png")/*tpa=http://www.chinabang.net/images/fnavtb1.png*/ no-repeat left  center;  background-size:auto 30px; padding-left:40px; padding-top:5px; padding-bottom:5px; }
+.m_foot a{ color:#FFFFFF;}
+.m_foot .f12 { font-size:10px;}
+.m_foot .f10 { font-size:10px;}
+
+#l_dhzk h3 { font-size:30px;}
+
+.h60 { height:50px;}
+.knav { width:100%; height:50px; background:#08903d; position:fixed; bottom:0px; left:0px;}
+.knav  div{ width:25%; float:left; height:50px;}
+.knav .tel { background:url("../images/fnavtb1.png")/*tpa=http://www.chinabang.net/images/fnavtb1.png*/ no-repeat center 8px; background-size:auto 20px;}
+.knav .about { background:url("../images/fnavtb2.png")/*tpa=http://www.chinabang.net/images/fnavtb2.png*/ no-repeat center 8px; background-size:auto 20px;}
+.knav .contact { background:url("../images/fnavtb3.png")/*tpa=http://www.chinabang.net/images/fnavtb3.png*/ no-repeat center 8px; background-size:auto 20px;}
+.knav .zxjl { background:url("../images/fnavtb4.png")/*tpa=http://www.chinabang.net/images/fnavtb4.png*/ no-repeat center 8px; background-size:auto 20px;}
+.knav  div a { width:100%; height:25px; padding-top:25px; display:block; text-align:center; font-size:12px; color:#FFFFFF; line-height:30px;}
+
+
+
+.m_fuwu .m_fuwumk{ width:25%; height:160px;float:left; padding-top:30px;}
+.m_fuwu .m_fuwumk .fwpic { width:50px; height:50px; border-radius:50%; border:5px solid #19ac2a; text-align:center; margin:10px auto; }
+.m_fuwu .m_fuwumk .fwpic img{ height:26px; padding-top:12px;}
+.m_fuwu .m_fuwumk p{ text-align:center; color:#333; font-size:10px;}
+
+
+
+@media screen and (max-width: 440px) { 
+.section1 { height:240px; width:100%; position:relative; overflow: hidden;}
+.section1 .bg { width:100%; height:240px; background:url("../images/mobilebg.jpg")/*tpa=http://www.chinabang.net/images/mobilebg.jpg*/ no-repeat center center;}
+
+.hgroup {  position: absolute; width:  76%; height: 150px; left: 12%; top: 80px;  opacity:1; -webkit-transform:scale(1, 1); transform:scale(1, 1); transition-delay: 0.5s;  }
+
+}
